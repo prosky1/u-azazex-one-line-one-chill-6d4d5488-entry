@@ -1,5 +1,5 @@
 // One Line, One Chill — entry program.
-// Writes a single scary sentence (123 chars) to /output/entry.txt.
+// Writes a single scary sentence (76 chars) to /output/entry.txt.
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
@@ -9,8 +9,14 @@ function normalize(text: string): string {
 }
 
 const LINE = normalize(
-  "I tucked my daughter in, kissed her forehead, and she whispered, 'Daddy, why is there another you standing in the doorway?'",
+  "My voicemail was my own voice saying goodbye, and I haven't recorded it yet.",
 );
+
+// The draft line is exactly 76 characters; pin it so any silent edit fails loudly.
+const EXPECTED_LENGTH = 76;
+if (LINE.length !== EXPECTED_LENGTH) {
+  throw new Error(`Entry is ${LINE.length} characters, expected exactly ${EXPECTED_LENGTH}.`);
+}
 
 const outDir = "/output";
 mkdirSync(outDir, { recursive: true });

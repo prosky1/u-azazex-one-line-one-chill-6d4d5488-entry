@@ -8,9 +8,9 @@ One scary sentence, under 200 characters, for the [One Line, One Chill](https://
 
 ## Entry
 
-> I tucked my daughter in, kissed her forehead, and she whispered, 'Daddy, why is there another you standing in the doorway?'
+> My voicemail was my own voice saying goodbye, and I haven't recorded it yet.
 
-123 characters, one sentence. The program (`main.ts`) writes exactly this line to `/output/entry.txt`, guarded by a length check (< 200 characters) and a read-back verification that the file on disk is byte-identical to the draft.
+76 characters, one sentence. The program (`main.ts`) writes exactly this line to `/output/entry.txt`, guarded by a length check (< 200 characters) and a read-back verification that the file on disk is byte-identical to the draft.
 
 ## Run
 
